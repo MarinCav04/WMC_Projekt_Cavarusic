@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Anmeldung - Hallenturnier</title>
+    <link rel="stylesheet" href="../CSS/style1.css">
+</head>
+<body>
+    <header class="tournament_header">
+        <img src="sv-gratwein-logo.png">
+        <nav>
+            <ul>
+                <li><a href="hallenturnier.html">Startseite</a></li>
+                <li><a href="anmeldung.html">Anmeldung</a></li>
+                <li><a href="regeln.html">Regeln</a></li>
+                <li><a href="tor_zähler.html">Tor-Zähler</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="score-container">
+            <h2>Live Tor-Zähler</h2>
+
+            <div class="scoreboard">
+                <div class="team-score">
+                    <h3>Heim</h3>
+                    <div id="score-home" class="number">0</div>
+                    <button onclick="addGoal('home')" class="score-btn">+ Tor</button>
+                </div>
+
+                <div class="divider">:</div>
+
+                <div class="team-score">
+                    <h3>Gast</h3>
+                    <div id="score-guest" class="number">0</div>
+                    <button onclick="addGoal('guest')" class="score-btn">+ Tor</button>
+                </div>
+            </div>
+            <button onclick="resetScore()" class="reset-btn">Zähler zurücksetzen</button>
+        </div>
+    </main>
+
+    <script src="../JS/score-counter.js"></script>
+
+</body>    
+</html>

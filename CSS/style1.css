@@ -1,0 +1,238 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: azure;
+    line-height: 1.6;
+
+    background-image: url('backgroundcss.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+main {
+    background-color: #0d2222; 
+    padding: 30px;
+    margin: 25px auto;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, h3 {
+    color: azure;
+    font-size: 35px;
+    text-align: center;
+}
+
+p {
+    color: azure;
+    font-size: 28px;
+    text-align: center;
+}
+
+.tournament_header {
+    padding-top: 30px;
+    text-align: center;
+    color: azure;
+    font-size: 28px;
+}
+
+.tournament_header img {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+nav {
+    background-color: #0d2222;
+    border-top: 2px solid #ffd700;
+    border-bottom: 2px solid #ffd700;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 25px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px; 
+    border-radius: 4px; 
+    display: block;
+}
+
+.event-detail-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    background-color: #0d2222; 
+    color: white;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.event-details { 
+    flex: 1;
+    padding: 20px 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.event-details strong {
+    display: block;
+    font-size: 1.1em;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0d2222;
+    color: azure;
+    margin-top: 20px;
+}
+
+/* styling für anmeldung.html */
+
+.registration {
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: azure;
+    font-size: 22px;
+}
+
+input {
+    color: azure;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    font-size: 28px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #0d2222;
+}
+
+::placeholder {
+    color: azure;
+    font-size: 20px;
+}
+
+.checkbox-group, .radio-group {
+    gap: 15px;
+    background-color: #0d2222;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.radio-group label, .checkbox-group label {
+    display: flex;       /* Macht aus dem Label eine Reihe */
+    align-items: center;  /* Richtet Kreis/Kästchen und Text mittig aus */
+    color: azure;       
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #ffd700;
+    color: azure;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #917c02;
+}
+
+/* Styling regeln */
+.infos {
+    text-align: left;
+    color: azure;
+    line-height: 1.5;
+}
+
+.rules_section {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.rules_section h3 {
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+/* JS - Programm */
+.scoreboard {
+    align-items: center;
+    padding: 30px;
+    color: #0d2222;
+    border-radius: 10px;
+    border: 2px solid #ffd700;
+}
+
+.number {
+    font-size: 80px;
+    color: #ffd700;
+    margin: 20px 0;
+}
+
+.score-btn {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ffd700;
+    color: azure;
+    border: 1px solid azure;
+    padding: 10px 20px;
+}
+
+.reset-btn {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ffd700;
+    color: azure;
+    border: 1px solid azure;
+    padding: 10px 20px;
+    margin-top: 10pt;
+}
+
+.reset-btn:hover, .score-btn:hover {
+    background-color: #917c02;
+}
+

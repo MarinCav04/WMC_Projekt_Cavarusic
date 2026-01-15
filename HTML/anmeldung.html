@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Anmeldung - Hallenturnier</title>
+    <link rel="stylesheet" href="../CSS/style1.css">
+</head>
+<body>
+    <header class="tournament_header">
+        <img src="sv-gratwein-logo.png">
+        <nav>
+            <ul>
+                <li><a href="hallenturnier.html">Startseite</a></li>
+                <li><a href="anmeldung.html">Anmeldung</a></li>
+                <li><a href="regeln.html">Regeln</a></li>
+                <li><a href="tor_zähler.html">Tor-Zähler</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Team-Anmeldung</h2>
+        <p>Melde dein Team hier für das Hallenturnier 2026 an.</p>
+
+        <form id="registration">
+            <div class="form_group">
+                <label>Teamname:</label>
+                <input type="text" id="teamname" required placeholder="z.B SV Gratwein-Straßengel">
+            </div>
+            <div class="form_group">
+                <label>Name des Trainers:</label>
+                <input type="text" id="trainer" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-Mail Adresse:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="players">Anzahl der Spieler:</label>
+                <input type="number" id="players" name="players" min="6" max="12" value="7">
+            </div>
+            <div class="form-group">
+                <label>Altersklassen:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="age" value="U8"> U8</label>
+                    <label><input type="checkbox" name="age" value="U10"> U10</label>
+                    <label><input type="checkbox" name="age" value="U12"> U12</label>
+                    <label><input type="checkbox" name="age" value="U15"> U15</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Verpflegung vor Ort gewünscht?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="catering" value="ja" checked> Ja, bitte</label>
+                    <label><input type="radio" name="catering" value="nein"> Nein, danke</label>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Anmeldung abschicken</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Fußballturnier des SV Gratwein-Straßengel</p>
+    </footer>
+
+    <script src="../JS/validation.js"></script>
+
+</body>
+</html>
