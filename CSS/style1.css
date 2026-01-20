@@ -1,3 +1,7 @@
+html {
+    /* Setzt die Grundskalierung auf 60% */
+    zoom: 0.6;
+}
 body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
@@ -12,7 +16,7 @@ body {
 }
 
 main {
-    background-color: #0d2222; 
+    background-color: #0d2222;
     padding: 30px;
     margin: 25px auto;
     max-width: 1000px;
@@ -66,15 +70,15 @@ nav ul {
 nav ul li {
     display: inline-block;
     vertical-align: middle;
-    margin: 0 25px; 
+    margin: 0 25px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 8px 15px; 
-    border-radius: 4px; 
+    padding: 8px 15px;
+    border-radius: 4px;
     display: block;
 }
 
@@ -82,13 +86,13 @@ nav ul li a {
     display: flex;
     justify-content: space-around;
     padding: 15px 0;
-    background-color: #0d2222; 
+    background-color: #0d2222;
     color: white;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.event-details { 
+.event-details {
     flex: 1;
     padding: 20px 0;
     border-right: 1px solid rgba(255, 255, 255, 0.15);
@@ -160,7 +164,7 @@ input {
 .radio-group label, .checkbox-group label {
     display: flex;       /* Macht aus dem Label eine Reihe */
     align-items: center;  /* Richtet Kreis/Kästchen und Text mittig aus */
-    color: azure;       
+    color: azure;
     font-weight: normal;
     cursor: pointer;
 }
